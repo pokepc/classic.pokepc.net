@@ -80,6 +80,7 @@ WORKDIR /webapp
 COPY . /webapp
 COPY --from=app_build /webapp/node_modules /webapp/node_modules
 COPY --from=app_build /webapp/.next /webapp/.next
+RUN cp -r /webapp/.next/static /webapp/public/_next/static
 RUN chmod +x /webapp/infrastructure/docker-entrypoint.sh
 EXPOSE 4000
 CMD ["/webapp/infrastructure/docker-entrypoint.sh"]
