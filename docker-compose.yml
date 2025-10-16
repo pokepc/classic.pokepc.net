@@ -1,4 +1,27 @@
 services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: app_serve
+    ports:
+      - 4000:4000
+    env_file:
+      - .env
+    logging:
+      driver: json-file
+      options:
+        max-size: '10m'
+        max-file: '10'
+    healthcheck:
+      test:
+        - CMD
+        - curl
+        - '-f'
+        - 'http://localhost:3000/proxyhealth'
+      interval: 10s
+      timeout: 5s
+      retries: 10
   postgres:
     image: postgres:16-alpine
     ports:
@@ -10,10 +33,3 @@ services:
       - POSTGRES_USER=myuser
       - POSTGRES_PASSWORD=mysecret
       - POSTGRES_DB=supereffectivedb
-  pgadmin:
-    image: dpage/pgadmin4
-    ports:
-      - 45433:80 # http://localhost:5480
-    environment:
-      - PGADMIN_DEFAULT_EMAIL=myuser@example.com # login for the UI
-      - PGADMIN_DEFAULT_PASSWORD=mysecret

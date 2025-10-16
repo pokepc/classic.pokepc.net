@@ -1,0 +1,12 @@
+.next
+node_modules
+.local
+.vercel
+.contentlayer
+.ignore
+.generated
+.history
+.vscode
+.turbo
+.git
+.github
