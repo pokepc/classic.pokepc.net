@@ -9,7 +9,7 @@ const appConfig = {
   dev: isDevelopmentEnv(),
   baseUrl: getBaseUrl(),
   version: {
-    num: '3.10.0',
+    num: '3.10.1',
   },
   themeColor: '#1a1d1f',
   texts: {
