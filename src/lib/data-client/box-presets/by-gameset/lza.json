@@ -97,6 +97,7 @@
           "pikachu-f",
           "raichu",
           "raichu-f",
+          "raichu-alola",
           "cleffa",
           "clefairy",
           "clefable",
@@ -108,13 +109,13 @@
           "kadabra",
           "kadabra-f",
           "alakazam",
-          "alakazam-f",
-          "gastly"
+          "alakazam-f"
         ]
       },
       {
         "title": "Box 4",
         "pokemon": [
+          "gastly",
           "haunter",
           "gengar",
           "venipede",
@@ -143,13 +144,13 @@
           "gardevoir",
           "gallade",
           "houndour",
-          "houndoom",
-          "houndoom-f"
+          "houndoom"
         ]
       },
       {
         "title": "Box 5",
         "pokemon": [
+          "houndoom-f",
           "swablu",
           "altaria",
           "audino",
@@ -178,13 +179,13 @@
           "numel-f",
           "camerupt",
           "camerupt-f",
-          "hippopotas",
-          "hippopotas-f"
+          "hippopotas"
         ]
       },
       {
         "title": "Box 6",
         "pokemon": [
+          "hippopotas-f",
           "hippowdon",
           "hippowdon-f",
           "drilbur",
@@ -208,18 +209,21 @@
           "riolu",
           "lucario",
           "slowpoke",
+          "slowpoke-galar",
           "slowbro",
+          "slowbro-galar",
           "slowking",
-          "carvanha",
-          "sharpedo",
-          "tynamo",
-          "eelektrik",
-          "eelektross"
+          "slowking-galar",
+          "carvanha"
         ]
       },
       {
         "title": "Box 7",
         "pokemon": [
+          "sharpedo",
+          "tynamo",
+          "eelektrik",
+          "eelektross",
           "dratini",
           "dragonair",
           "dragonite",
@@ -245,16 +249,16 @@
           "furfrou-la-reine",
           "furfrou-kabuki",
           "furfrou-pharaoh",
-          "inkay",
-          "malamar",
-          "skrelp",
-          "dragalge",
-          "clauncher"
+          "inkay"
         ]
       },
       {
         "title": "Box 8",
         "pokemon": [
+          "malamar",
+          "skrelp",
+          "dragalge",
+          "clauncher",
           "clawitzer",
           "goomy",
           "sliggoo",
@@ -280,16 +284,16 @@
           "hawlucha",
           "phantump",
           "trevenant",
-          "scraggy",
-          "scrafty",
-          "noibat",
-          "noivern",
-          "klefki"
+          "scraggy"
         ]
       },
       {
         "title": "Box 9",
         "pokemon": [
+          "scrafty",
+          "noibat",
+          "noivern",
+          "klefki",
           "litwick",
           "lampent",
           "chandelure",
@@ -315,16 +319,16 @@
           "gourgeist-large",
           "gourgeist-super",
           "larvitar",
-          "pupitar",
-          "tyranitar",
-          "froakie",
-          "frogadier",
-          "greninja"
+          "pupitar"
         ]
       },
       {
         "title": "Box 10",
         "pokemon": [
+          "tyranitar",
+          "froakie",
+          "frogadier",
+          "greninja",
           "falinks",
           "chespin",
           "quilladin",
@@ -421,16 +425,17 @@
           "pichu",
           "pikachu",
           "raichu",
+          "raichu-alola",
           "cleffa",
           "clefairy",
           "clefable",
-          "spinarak",
-          "ariados"
+          "spinarak"
         ]
       },
       {
         "title": "Box 3",
         "pokemon": [
+          "ariados",
           "ekans",
           "arbok",
           "abra",
@@ -459,13 +464,13 @@
           "electrike",
           "manectric",
           "ralts",
-          "kirlia",
-          "gardevoir"
+          "kirlia"
         ]
       },
       {
         "title": "Box 4",
         "pokemon": [
+          "gardevoir",
           "gallade",
           "houndour",
           "houndoom",
@@ -494,13 +499,13 @@
           "vanilluxe",
           "numel",
           "camerupt",
-          "hippopotas",
-          "hippowdon"
+          "hippopotas"
         ]
       },
       {
         "title": "Box 5",
         "pokemon": [
+          "hippowdon",
           "drilbur",
           "excadrill",
           "sandile",
@@ -519,23 +524,26 @@
           "riolu",
           "lucario",
           "slowpoke",
+          "slowpoke-galar",
           "slowbro",
+          "slowbro-galar",
           "slowking",
+          "slowking-galar",
           "carvanha",
           "sharpedo",
           "tynamo",
           "eelektrik",
           "eelektross",
-          "dratini",
-          "dragonair",
-          "dragonite",
-          "bulbasaur",
-          "ivysaur"
+          "dratini"
         ]
       },
       {
         "title": "Box 6",
         "pokemon": [
+          "dragonair",
+          "dragonite",
+          "bulbasaur",
+          "ivysaur",
           "venusaur",
           "charmander",
           "charmeleon",
@@ -561,16 +569,16 @@
           "froslass",
           "snover",
           "abomasnow",
-          "bergmite",
-          "avalugg",
-          "scyther",
-          "scizor",
-          "pinsir"
+          "bergmite"
         ]
       },
       {
         "title": "Box 7",
         "pokemon": [
+          "avalugg",
+          "scyther",
+          "scizor",
+          "pinsir",
           "heracross",
           "emolga",
           "hawlucha",
@@ -596,16 +604,16 @@
           "aggron",
           "helioptile",
           "heliolisk",
-          "pumpkaboo",
-          "pumpkaboo-small",
-          "pumpkaboo-large",
-          "pumpkaboo-super",
-          "gourgeist"
+          "pumpkaboo"
         ]
       },
       {
         "title": "Box 8",
         "pokemon": [
+          "pumpkaboo-small",
+          "pumpkaboo-large",
+          "pumpkaboo-super",
+          "gourgeist",
           "gourgeist-small",
           "gourgeist-large",
           "gourgeist-super",
@@ -631,7 +639,12 @@
           "beldum",
           "metang",
           "metagross",
-          "xerneas",
+          "xerneas"
+        ]
+      },
+      {
+        "title": "Box 9",
+        "pokemon": [
           "yveltal",
           "zygarde",
           "zygarde-10",
