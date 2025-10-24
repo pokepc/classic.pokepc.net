@@ -680,6 +680,7 @@
           "diggersby",
           "scatterbug",
           "spewpa",
+          "vivillon-meadow",
           "weedle",
           "kakuna",
           "beedrill",
@@ -692,13 +693,13 @@
           "patrat",
           "watchog",
           "budew",
-          "roselia",
-          "roserade"
+          "roselia"
         ]
       },
       {
         "title": "Box 2",
         "pokemon": [
+          "roserade",
           "magikarp",
           "gyarados",
           "binacle",
@@ -727,13 +728,13 @@
           "clefable",
           "spinarak",
           "ariados",
-          "ekans",
-          "arbok"
+          "ekans"
         ]
       },
       {
         "title": "Box 3",
         "pokemon": [
+          "arbok",
           "abra",
           "kadabra",
           "alakazam",
@@ -762,13 +763,13 @@
           "ralts",
           "kirlia",
           "gardevoir",
-          "gallade",
-          "houndour"
+          "gallade"
         ]
       },
       {
         "title": "Box 4",
         "pokemon": [
+          "houndour",
           "houndoom",
           "swablu",
           "altaria",
@@ -797,13 +798,13 @@
           "camerupt",
           "hippopotas",
           "hippowdon",
-          "drilbur",
-          "excadrill"
+          "drilbur"
         ]
       },
       {
         "title": "Box 5",
         "pokemon": [
+          "excadrill",
           "sandile",
           "krokorok",
           "krookodile",
@@ -832,13 +833,13 @@
           "dragonite",
           "bulbasaur",
           "ivysaur",
-          "venusaur",
-          "charmander"
+          "venusaur"
         ]
       },
       {
         "title": "Box 6",
         "pokemon": [
+          "charmander",
           "charmeleon",
           "charizard",
           "squirtle",
@@ -868,12 +869,12 @@
           "pinsir",
           "heracross",
           "emolga",
-          "hawlucha"
         ]
       },
       {
         "title": "Box 7",
         "pokemon": [
+          "hawlucha",
           "phantump",
           "trevenant",
           "scraggy",
@@ -903,12 +904,12 @@
           "tyranitar",
           "froakie",
           "frogadier",
-          "greninja"
         ]
       },
       {
         "title": "Box 8",
         "pokemon": [
+          "greninja",
           "falinks",
           "chespin",
           "quilladin",
