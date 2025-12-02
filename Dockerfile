@@ -41,7 +41,7 @@ ENV APP_ENV=production
 ENV EMAIL_PROVIDER=resend
 ENV BUN_INSTALL="/root/.bun"
 ENV PATH="${BUN_INSTALL}/bin:${PATH}"
-COPY infrastructure/nginx.conf /etc/nginx/nginx.conf
+COPY server/nginx.conf /etc/nginx/nginx.conf
 RUN apt-get update && apt-get install -y --no-install-recommends \
   ca-certificates openssh-client curl wget git unzip \
   && rm -rf /var/lib/apt/lists/*
@@ -81,6 +81,6 @@ COPY . /webapp
 COPY --from=app_build /webapp/node_modules /webapp/node_modules
 COPY --from=app_build /webapp/.next /webapp/.next
 RUN mkdir -p /webapp/public/_next && cp -r /webapp/.next/static /webapp/public/_next/static
-RUN chmod +x /webapp/infrastructure/docker-entrypoint.sh
+RUN chmod +x /webapp/server/docker-entrypoint.sh
 EXPOSE 4000
-CMD ["/webapp/infrastructure/docker-entrypoint.sh"]
+CMD ["/webapp/server/docker-entrypoint.sh"]

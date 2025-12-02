@@ -1,7 +1,7 @@
-import fs from 'node:fs'
-import path from 'node:path'
 import { globSync } from 'glob'
 import matter from 'gray-matter'
+import fs from 'node:fs'
+import path from 'node:path'
 
 import { MDXFileContent } from './types'
 
@@ -9,7 +9,7 @@ if (typeof window !== 'undefined') {
   throw new Error('This file should not be imported in the browser')
 }
 
-const cmsPath = path.resolve(process.env['CMS_PATH'] || path.join(process.cwd(), 'content'))
+const cmsPath = path.resolve(process.env['CMS_PATH'] || path.join(process.cwd(), 'src', 'pages-mdx'))
 console.log('Resolved CMS path:', cmsPath)
 
 export const getAllEntries = _createGetAllEntriesFn(cmsPath)
