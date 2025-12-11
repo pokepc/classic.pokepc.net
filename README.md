@@ -94,6 +94,9 @@ Basic instructions:
   `box-presets/legacy-boxpresets.min.json` by calling `npx -y tsx run src/lib/data-client/box-presets/join-presets.ts`
   or `bun run src/lib/data-client/box-presets/join-presets.ts`.
 
+> NOTE: when editing the `legacy-pokemon.json` file, you will need to run `pnpm build:data:pokemon` to minify the file.
+> After editing any JSON data file, run a final `pnpm build:data` to make sure everything else is correctly built.
+
 ## License
 
 The original content (graphics and text created by us), and the design of this website is licensed under

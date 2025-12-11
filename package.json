@@ -12,7 +12,7 @@
     "db-migrate": "pnpm prisma migrate deploy",
     "db-studio": "pnpm prisma studio",
     "dev": "rm -rf ./.next && PORT=3001 next dev",
-    "format": "sort-package-json && prettier --ignore-path '.prettierignore' --write ./",
+    "format": "sort-package-json && prettier --cache --ignore-path '.prettierignore' --write ./",
     "json:minify": "bun run scripts/format-json-file.ts --minify",
     "json:unminify": "bun run scripts/format-json-file.ts",
     "lint": "pnpm typecheck && prettier --ignore-path '.prettierignore' --check ./",
