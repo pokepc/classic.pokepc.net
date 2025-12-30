@@ -436,8 +436,8 @@
           "zeraora"
         ]
       },
-      {
-        "title": "Females",
+            {
+        "title": "Females 1",
         "pokemon": [
           "meganium-f",
           "roselia-f",
@@ -468,7 +468,23 @@
           "scizor-f",
           "heracross-f",
           "steelix-f",
-          "indeedee-f"
+          "torchic-f"
+        ]
+      },
+      {
+        "title": "Females 2",
+        "pokemon": [
+          "combusken-f",
+          "blaziken-f",
+          "milotic-f",
+          "indeedee-f",
+          "starly-f",
+          "staravia-f",
+          "staraptor-f",
+          "gulpin-f",
+          "swalot-f",
+          "zubat-f",
+          "golbat-f"
         ]
       },
       {
