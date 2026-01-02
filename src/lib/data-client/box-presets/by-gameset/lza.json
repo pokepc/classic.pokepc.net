@@ -436,7 +436,7 @@
           "zeraora"
         ]
       },
-            {
+      {
         "title": "Females 1",
         "pokemon": [
           "meganium-f",
@@ -509,7 +509,10 @@
       },
       {
         "title": "Vivillon Patterns",
-        "pokemon": ["vivillon-garden", "vivillon-marine"]
+        "pokemon": [
+          "vivillon-garden",
+          "vivillon-marine"
+        ]
       },
       {
         "title": "Alternative",
@@ -598,6 +601,7 @@
           "scatterbug",
           "spewpa",
           "vivillon-meadow",
+          "vivillon-garden",
           "vivillon-marine",
           "weedle",
           "kakuna",
@@ -608,13 +612,13 @@
           "mareep",
           "flaaffy",
           "ampharos",
-          "patrat",
-          "watchog"
+          "patrat"
         ]
       },
       {
         "title": "Box 2",
         "pokemon": [
+          "watchog",
           "budew",
           "roselia",
           "roselia-f",
@@ -643,13 +647,13 @@
           "florges-blue",
           "florges-orange",
           "florges-white",
-          "florges-yellow",
-          "skiddo"
+          "florges-yellow"
         ]
       },
       {
         "title": "Box 3",
         "pokemon": [
+          "skiddo",
           "gogoat",
           "espurr",
           "meowstic",
@@ -678,13 +682,13 @@
           "abra",
           "kadabra",
           "kadabra-f",
-          "alakazam",
-          "alakazam-f"
+          "alakazam"
         ]
       },
       {
         "title": "Box 4",
         "pokemon": [
+          "alakazam-f",
           "gastly",
           "haunter",
           "gengar",
@@ -713,13 +717,13 @@
           "kirlia",
           "gardevoir",
           "gallade",
-          "houndour",
-          "houndoom"
+          "houndour"
         ]
       },
       {
         "title": "Box 5",
         "pokemon": [
+          "houndoom",
           "houndoom-f",
           "swablu",
           "altaria",
@@ -748,13 +752,13 @@
           "numel",
           "numel-f",
           "camerupt",
-          "camerupt-f",
-          "hippopotas"
+          "camerupt-f"
         ]
       },
       {
         "title": "Box 6",
         "pokemon": [
+          "hippopotas",
           "hippopotas-f",
           "hippowdon",
           "hippowdon-f",
@@ -783,13 +787,13 @@
           "slowbro",
           "slowbro-galar",
           "slowking",
-          "slowking-galar",
-          "carvanha"
+          "slowking-galar"
         ]
       },
       {
         "title": "Box 7",
         "pokemon": [
+          "carvanha",
           "sharpedo",
           "tynamo",
           "eelektrik",
@@ -818,13 +822,13 @@
           "furfrou-dandy",
           "furfrou-la-reine",
           "furfrou-kabuki",
-          "furfrou-pharaoh",
-          "inkay"
+          "furfrou-pharaoh"
         ]
       },
       {
         "title": "Box 8",
         "pokemon": [
+          "inkay",
           "malamar",
           "skrelp",
           "dragalge",
@@ -832,7 +836,9 @@
           "clawitzer",
           "goomy",
           "sliggoo",
+          "sliggoo-hisui",
           "goodra",
+          "goodra-hisui",
           "delibird",
           "snorunt",
           "glalie",
@@ -843,6 +849,7 @@
           "abomasnow-f",
           "bergmite",
           "avalugg",
+          "avalugg-hisui",
           "scyther",
           "scyther-f",
           "scizor",
@@ -850,16 +857,16 @@
           "pinsir",
           "heracross",
           "heracross-f",
-          "emolga",
-          "hawlucha",
-          "phantump",
-          "trevenant",
-          "scraggy"
+          "emolga"
         ]
       },
       {
         "title": "Box 9",
         "pokemon": [
+          "hawlucha",
+          "phantump",
+          "trevenant",
+          "scraggy",
           "scrafty",
           "noibat",
           "noivern",
@@ -885,16 +892,16 @@
           "pumpkaboo-large",
           "pumpkaboo-super",
           "gourgeist",
-          "gourgeist-small",
-          "gourgeist-large",
-          "gourgeist-super",
-          "larvitar",
-          "pupitar"
+          "gourgeist-small"
         ]
       },
       {
         "title": "Box 10",
         "pokemon": [
+          "gourgeist-large",
+          "gourgeist-super",
+          "larvitar",
+          "pupitar",
           "tyranitar",
           "froakie",
           "frogadier",
@@ -918,8 +925,209 @@
           "xerneas",
           "yveltal",
           "zygarde",
+          "zygarde-10",
           "diancie",
           "mewtwo"
+        ]
+      },
+      {
+        "title": "Box 11",
+        "pokemon": [
+          "mankey",
+          "primeape",
+          "annihilape",
+          "meowth",
+          "meowth-alola",
+          "meowth-galar",
+          "persian",
+          "persian-alola",
+          "perrserker",
+          "farfetchd",
+          "farfetchd-galar",
+          "sirfetchd",
+          "cubone",
+          "marowak",
+          "marowak-alola",
+          "porygon",
+          "porygon2",
+          "porygonz",
+          "capsakid",
+          "scovillain",
+          "tinkatink",
+          "tinkatuff",
+          "tinkaton",
+          "cyclizar",
+          "glimmet",
+          "glimmora",
+          "rotom",
+          "rotom-heat",
+          "rotom-wash",
+          "rotom-frost"
+        ]
+      },
+      {
+        "title": "Box 12",
+        "pokemon": [
+          "rotom-fan",
+          "rotom-mow",
+          "greavard",
+          "houndstone",
+          "sandygast",
+          "palossand",
+          "kecleon",
+          "flamigo",
+          "cryogonal",
+          "dondozo",
+          "tatsugiri",
+          "tatsugiri-droopy",
+          "tatsugiri-stretchy",
+          "frigibax",
+          "arctibax",
+          "baxcalibur",
+          "gimmighoul",
+          "gholdengo",
+          "qwilfish",
+          "qwilfish-hisui",
+          "overqwil",
+          "treecko",
+          "grovyle",
+          "sceptile",
+          "torchic",
+          "torchic-f",
+          "combusken",
+          "combusken-f",
+          "blaziken",
+          "blaziken-f"
+        ]
+      },
+      {
+        "title": "Box 13",
+        "pokemon": [
+          "mudkip",
+          "marshtomp",
+          "swampert",
+          "feebas",
+          "milotic",
+          "milotic-f",
+          "chingling",
+          "chimecho",
+          "indeedee",
+          "indeedee-f",
+          "purrloin",
+          "liepard",
+          "munna",
+          "musharna",
+          "throh",
+          "sawk",
+          "yamask",
+          "yamask-galar",
+          "cofagrigus",
+          "runerigus",
+          "wimpod",
+          "golisopod",
+          "nickit",
+          "thievul",
+          "clobbopus",
+          "grapploct",
+          "mimikyu",
+          "kleavor",
+          "morpeko",
+          "golett"
+        ]
+      },
+      {
+        "title": "Box 14",
+        "pokemon": [
+          "golurk",
+          "rookidee",
+          "corvisquire",
+          "corviknight",
+          "igglybuff",
+          "jigglypuff",
+          "wigglytuff",
+          "fidough",
+          "dachsbun",
+          "starly",
+          "starly-f",
+          "staravia",
+          "staravia-f",
+          "staraptor",
+          "staraptor-f",
+          "spoink",
+          "grumpig",
+          "squawkabilly",
+          "squawkabilly-blue",
+          "squawkabilly-yellow",
+          "squawkabilly-white",
+          "crabrawler",
+          "crabominable",
+          "nacli",
+          "naclstack",
+          "garganacl",
+          "gulpin",
+          "gulpin-f",
+          "swalot",
+          "swalot-f"
+        ]
+      },
+      {
+        "title": "Box 15",
+        "pokemon": [
+          "zubat",
+          "zubat-f",
+          "golbat",
+          "golbat-f",
+          "crobat",
+          "charcadet",
+          "armarouge",
+          "ceruledge",
+          "maschiff",
+          "mabosstiff",
+          "toxel",
+          "toxtricity",
+          "toxtricity-low-key",
+          "shroodle",
+          "grafaiai",
+          "zangoose",
+          "seviper",
+          "mimejr",
+          "mrmime",
+          "mrmime-galar",
+          "mrrime",
+          "foongus",
+          "amoonguss",
+          "heatran",
+          "volcanion",
+          "cobalion",
+          "terrakion",
+          "virizion",
+          "keldeo",
+          "keldeo-resolute"
+        ]
+      },
+      {
+        "title": "Box 16",
+        "pokemon": [
+          "meloetta",
+          "genesect",
+          "genesect-douse",
+          "genesect-shock",
+          "genesect-burn",
+          "genesect-chill",
+          "hoopa",
+          "hoopa-unbound",
+          "marshadow",
+          "meltan",
+          "melmetal",
+          "darkrai",
+          "latias",
+          "latios",
+          "kyogre",
+          "groudon",
+          "rayquaza",
+          "magearna",
+          "magearna-original",
+          "zeraora"
         ]
       }
     ]
@@ -1133,20 +1341,23 @@
           "clawitzer",
           "goomy",
           "sliggoo",
+          "sliggoo-hisui",
           "goodra",
+          "goodra-hisui",
           "delibird",
           "snorunt",
           "glalie",
-          "froslass",
-          "snover",
-          "abomasnow"
+          "froslass"
         ]
       },
       {
         "title": "Box 7",
         "pokemon": [
+          "snover",
+          "abomasnow",
           "bergmite",
           "avalugg",
+          "avalugg-hisui",
           "scyther",
           "scizor",
           "pinsir",
@@ -1171,15 +1382,15 @@
           "onix",
           "steelix",
           "aron",
-          "lairon",
-          "aggron",
-          "helioptile",
-          "heliolisk"
+          "lairon"
         ]
       },
       {
         "title": "Box 8",
         "pokemon": [
+          "aggron",
+          "helioptile",
+          "heliolisk",
           "pumpkaboo",
           "pumpkaboo-small",
           "pumpkaboo-large",
@@ -1206,15 +1417,199 @@
           "shelgon",
           "salamence",
           "kangaskhan",
-          "drampa",
-          "beldum",
-          "metang",
-          "metagross"
+          "drampa"
         ]
       },
       {
         "title": "Box 9",
-        "pokemon": ["xerneas", "yveltal", "zygarde", "diancie", "mewtwo"]
+        "pokemon": [
+          "beldum",
+          "metang",
+          "metagross",
+          "xerneas",
+          "yveltal",
+          "zygarde",
+          "zygarde-10",
+          "diancie",
+          "mewtwo",
+          "mankey",
+          "primeape",
+          "annihilape",
+          "meowth",
+          "meowth-alola",
+          "meowth-galar",
+          "persian",
+          "persian-alola",
+          "perrserker",
+          "farfetchd",
+          "farfetchd-galar",
+          "sirfetchd",
+          "cubone",
+          "marowak",
+          "marowak-alola",
+          "porygon",
+          "porygon2",
+          "porygonz",
+          "capsakid",
+          "scovillain",
+          "tinkatink"
+        ]
+      },
+      {
+        "title": "Box 10",
+        "pokemon": [
+          "tinkatuff",
+          "tinkaton",
+          "cyclizar",
+          "glimmet",
+          "glimmora",
+          "rotom",
+          "rotom-heat",
+          "rotom-wash",
+          "rotom-frost",
+          "rotom-fan",
+          "rotom-mow",
+          "greavard",
+          "houndstone",
+          "sandygast",
+          "palossand",
+          "kecleon",
+          "flamigo",
+          "cryogonal",
+          "dondozo",
+          "tatsugiri",
+          "frigibax",
+          "arctibax",
+          "baxcalibur",
+          "gimmighoul",
+          "gholdengo",
+          "qwilfish",
+          "qwilfish-hisui",
+          "overqwil",
+          "treecko",
+          "grovyle"
+        ]
+      },
+      {
+        "title": "Box 11",
+        "pokemon": [
+          "sceptile",
+          "torchic",
+          "combusken",
+          "blaziken",
+          "mudkip",
+          "marshtomp",
+          "swampert",
+          "feebas",
+          "milotic",
+          "chingling",
+          "chimecho",
+          "indeedee",
+          "indeedee-f",
+          "purrloin",
+          "liepard",
+          "munna",
+          "musharna",
+          "throh",
+          "sawk",
+          "yamask",
+          "yamask-galar",
+          "cofagrigus",
+          "runerigus",
+          "wimpod",
+          "golisopod",
+          "nickit",
+          "thievul",
+          "clobbopus",
+          "grapploct",
+          "mimikyu"
+        ]
+      },
+      {
+        "title": "Box 12",
+        "pokemon": [
+          "kleavor",
+          "morpeko",
+          "golett",
+          "golurk",
+          "rookidee",
+          "corvisquire",
+          "corviknight",
+          "igglybuff",
+          "jigglypuff",
+          "wigglytuff",
+          "fidough",
+          "dachsbun",
+          "starly",
+          "staravia",
+          "staraptor",
+          "spoink",
+          "grumpig",
+          "squawkabilly",
+          "crabrawler",
+          "crabominable",
+          "nacli",
+          "naclstack",
+          "garganacl",
+          "gulpin",
+          "swalot",
+          "zubat",
+          "golbat",
+          "crobat",
+          "charcadet",
+          "armarouge"
+        ]
+      },
+      {
+        "title": "Box 13",
+        "pokemon": [
+          "ceruledge",
+          "maschiff",
+          "mabosstiff",
+          "toxel",
+          "toxtricity",
+          "toxtricity-low-key",
+          "shroodle",
+          "grafaiai",
+          "zangoose",
+          "seviper",
+          "mimejr",
+          "mrmime",
+          "mrmime-galar",
+          "mrrime",
+          "foongus",
+          "amoonguss",
+          "heatran",
+          "volcanion",
+          "cobalion",
+          "terrakion",
+          "virizion",
+          "keldeo",
+          "meloetta",
+          "genesect",
+          "genesect-douse",
+          "genesect-shock",
+          "genesect-burn",
+          "genesect-chill",
+          "hoopa",
+          "hoopa-unbound"
+        ]
+      },
+      {
+        "title": "Box 14",
+        "pokemon": [
+          "marshadow",
+          "meltan",
+          "melmetal",
+          "darkrai",
+          "latias",
+          "latios",
+          "kyogre",
+          "groudon",
+          "rayquaza",
+          "magearna",
+          "zeraora"
+        ]
       }
     ]
   },
@@ -1495,7 +1890,164 @@
           "yveltal",
           "zygarde",
           "diancie",
-          "mewtwo"
+          "mewtwo",
+          "mankey",
+          "primeape",
+          "annihilape",
+          "meowth",
+          "persian",
+          "perrserker",
+          "farfetchd",
+          "sirfetchd"
+        ]
+      },
+      {
+        "title": "Box 9",
+        "pokemon": [
+          "cubone",
+          "marowak",
+          "porygon",
+          "porygon2",
+          "porygonz",
+          "capsakid",
+          "scovillain",
+          "tinkatink",
+          "tinkatuff",
+          "tinkaton",
+          "cyclizar",
+          "glimmet",
+          "glimmora",
+          "rotom",
+          "greavard",
+          "houndstone",
+          "sandygast",
+          "palossand",
+          "kecleon",
+          "flamigo",
+          "cryogonal",
+          "dondozo",
+          "tatsugiri",
+          "frigibax",
+          "arctibax",
+          "baxcalibur",
+          "gimmighoul",
+          "gholdengo",
+          "qwilfish",
+          "overqwil"
+        ]
+      },
+      {
+        "title": "Box 10",
+        "pokemon": [
+          "treecko",
+          "grovyle",
+          "sceptile",
+          "torchic",
+          "combusken",
+          "blaziken",
+          "mudkip",
+          "marshtomp",
+          "swampert",
+          "feebas",
+          "milotic",
+          "chingling",
+          "chimecho",
+          "indeedee",
+          "purrloin",
+          "liepard",
+          "munna",
+          "musharna",
+          "throh",
+          "sawk",
+          "yamask",
+          "cofagrigus",
+          "runerigus",
+          "wimpod",
+          "golisopod",
+          "nickit",
+          "thievul",
+          "clobbopus",
+          "grapploct",
+          "mimikyu"
+        ]
+      },
+      {
+        "title": "Box 11",
+        "pokemon": [
+          "kleavor",
+          "morpeko",
+          "golett",
+          "golurk",
+          "rookidee",
+          "corvisquire",
+          "corviknight",
+          "igglybuff",
+          "jigglypuff",
+          "wigglytuff",
+          "fidough",
+          "dachsbun",
+          "starly",
+          "staravia",
+          "staraptor",
+          "spoink",
+          "grumpig",
+          "squawkabilly",
+          "crabrawler",
+          "crabominable",
+          "nacli",
+          "naclstack",
+          "garganacl",
+          "gulpin",
+          "swalot",
+          "zubat",
+          "golbat",
+          "crobat",
+          "charcadet",
+          "armarouge"
+        ]
+      },
+      {
+        "title": "Box 12",
+        "pokemon": [
+          "ceruledge",
+          "maschiff",
+          "mabosstiff",
+          "toxel",
+          "toxtricity",
+          "shroodle",
+          "grafaiai",
+          "zangoose",
+          "seviper",
+          "mimejr",
+          "mrmime",
+          "mrrime",
+          "foongus",
+          "amoonguss",
+          "heatran",
+          "volcanion",
+          "cobalion",
+          "terrakion",
+          "virizion",
+          "keldeo",
+          "meloetta",
+          "genesect",
+          "hoopa",
+          "marshadow",
+          "meltan",
+          "melmetal",
+          "darkrai",
+          "latias",
+          "latios",
+          "kyogre"
+        ]
+      },
+      {
+        "title": "Box 13",
+        "pokemon": [
+          "groudon",
+          "rayquaza",
+          "magearna",
+          "zeraora"
         ]
       }
     ]
