@@ -41,6 +41,14 @@ const getUserProfileHandler = async (req: NextApiRequest) => {
           lastUpdateTime: true,
           // We'll add computed fields after fetching
         },
+        orderBy: [
+          {
+            lastUpdateTime: 'desc',
+          },
+          {
+            creationTime: 'desc',
+          },
+        ],
       },
     },
   })
@@ -74,6 +82,9 @@ const getUserProfileHandler = async (req: NextApiRequest) => {
           totalShiny: 0,
           createdAt: dex.creationTime,
           updatedAt: dex.lastUpdateTime,
+          totalBoxes: 0,
+          totalRegularBoxes: 0,
+          totalShinyBoxes: 0,
         }
       }
 
@@ -92,6 +103,9 @@ const getUserProfileHandler = async (req: NextApiRequest) => {
         totalShiny: loadedDex.totalShiny,
         createdAt: loadedDex.createdAt,
         updatedAt: loadedDex.updatedAt,
+        totalBoxes: loadedDex.boxes.length,
+        totalRegularBoxes: loadedDex.boxes.filter((box) => !box.shiny).length,
+        totalShinyBoxes: loadedDex.boxes.filter((box) => box.shiny).length,
       }
     }),
   )

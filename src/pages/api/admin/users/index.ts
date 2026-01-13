@@ -95,7 +95,8 @@ const getUsersListHandler = async (req: NextApiRequest) => {
   }
 }
 
-const handler = async (req: NextApiRequest, res: NextApiResponse) => {
+// Disabled for now, since we don't need it in modern PokePC.
+const __disabled_handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const httpMethod = req.method || 'GET'
 
   // Only allow GET requests
@@ -116,4 +117,6 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   res.status(result.statusCode).json(result.data)
 }
 
-export default handler
+export default (_req: NextApiRequest, res: NextApiResponse) => {
+  res.status(404).json({ message: 'Endpoint not found' })
+}
