@@ -24,6 +24,7 @@ export default function EmailSigninView({
       <TextInput
         type="email"
         id="email"
+        aria-label="Email address"
         required
         name="email"
         placeholder={'Email address'}

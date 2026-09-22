@@ -1,0 +1,68 @@
+.notice {
+  position: relative;
+  color: var(--color-blueberry-darker);
+  background: var(--color-teal-4);
+  border: 2px solid var(--color-teal-2);
+  border-left-width: 6px;
+  text-align: left;
+  line-height: 1.6;
+  padding: clamp(1rem, 3vw, 2rem);
+  border-radius: 1rem;
+  margin: 1rem auto 2rem;
+  max-width: 64rem;
+}
+
+.notice.notice h2 {
+  margin: 0 0 0.75rem;
+  color: inherit;
+}
+
+.notice p {
+  margin: 0 0 0.75rem;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+}
+
+.actions a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.actions a.signup {
+  background: var(--color-blueberry-darker);
+  color: #fff;
+  text-decoration: none;
+  margin-left: 0;
+}
+
+.actions a.signup:hover {
+  background: var(--color-blueberry-medium);
+}
+
+.notice a:focus-visible {
+  outline: 3px solid var(--color-blueberry-darker);
+  outline-offset: 4px;
+}
+
+.notice .reassurance {
+  border-top: 1px solid var(--color-teal-2);
+  padding-top: 1rem;
+  margin: 1rem 0 0;
+}
+
+@media (max-width: 600px) {
+  .actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .actions a {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

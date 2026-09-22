@@ -10,6 +10,7 @@
     "build:data": "pnpm run build:data:pokemon && bun run src/lib/data-client/box-presets/join-presets.ts",
     "build:data:pokemon": "bun json:minify src/lib/data-client/pokemon/legacy-pokemon.json",
     "db-migrate": "pnpm prisma migrate deploy",
+    "db:migrate": "pnpm db-migrate",
     "db-studio": "pnpm prisma studio",
     "dev": "rm -rf ./.next && PORT=3001 next dev --webpack",
     "format": "sort-package-json && prettier --cache --ignore-path '.prettierignore' --write ./",

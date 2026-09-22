@@ -1,6 +1,14 @@
 import { NextApiRequest, NextApiResponse } from 'next'
-import NextAuth, { AuthOptions } from 'next-auth'
+import NextAuth, { AuthOptions, getServerSession } from 'next-auth'
+
+import { isRegistrationClosed } from '@/config/registration'
+
+import { withRegistrationPolicy } from './registrationPolicy'
 
 export const createAuthRouter = (req: NextApiRequest, res: NextApiResponse, authOptions: AuthOptions) => {
-  return NextAuth(req, res, authOptions)
+  const options = withRegistrationPolicy(authOptions, isRegistrationClosed, async () => {
+    const session = await getServerSession(req, res, authOptions)
+    return (session?.user as { id?: string } | undefined)?.id
+  })
+  return NextAuth(req, res, options)
 }

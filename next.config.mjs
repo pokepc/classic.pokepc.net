@@ -11,6 +11,10 @@ if (!process.env.VERCEL && !process.env.NEXTAUTH_URL) {
 
 /** @type {import('next').NextConfig} */
 const baseConfig = {
+  env: {
+    // Freeze the default too, so server and client cannot disagree after deployment.
+    NEXT_PUBLIC_REGISTRATION_CLOSED: process.env.NEXT_PUBLIC_REGISTRATION_CLOSED ?? 'false',
+  },
   sassOptions: {
     includePaths: [path.join(process.cwd(), 'src', 'styles')],
   },

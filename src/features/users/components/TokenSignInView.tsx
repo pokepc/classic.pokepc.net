@@ -21,9 +21,25 @@ export default function TokenSignInView({
     <form method="get" action={Routes.API.SignInCallback} encType="application/x-www-form-urlencoded">
       <input name="callbackUrl" type="hidden" defaultValue={loginUrl} />
       <input name="csrfToken" type="hidden" defaultValue={csrfToken || undefined} />
-      <TextInput type="email" id="email" required name="email" placeholder={'Email address'} {...rest} />
+      <TextInput
+        type="email"
+        id="email"
+        aria-label="Email address"
+        required
+        name="email"
+        placeholder={'Email address'}
+        {...rest}
+      />
 
-      <TextInput type="text" id="token" required name="token" placeholder={'Verification token'} {...rest} />
+      <TextInput
+        type="text"
+        id="token"
+        aria-label="Verification token"
+        required
+        name="token"
+        placeholder={'Verification token'}
+        {...rest}
+      />
       <Button type="submit">{buttonText}</Button>
     </form>
   )

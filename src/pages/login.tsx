@@ -1,8 +1,10 @@
 import { GetServerSidePropsContext } from 'next'
 
+import { isRegistrationClosed } from '@/config/registration'
 import PageMeta from '@/features/prose/components/PageMeta'
 import { createCsrfToken } from '@/features/users/auth/serverside/createCsrfToken'
 import { LoginView } from '@/features/users/components/LoginView'
+import styles from '@/features/users/components/LoginView.module.css'
 import { abs_url } from '@/lib/components/Links'
 
 const Page = ({ csrfToken }: { csrfToken: string | null }) => {
@@ -16,7 +18,9 @@ const Page = ({ csrfToken }: { csrfToken: string | null }) => {
         lang={'en'}
       />
       <article className={'page-authored-content'}>
-        <div className={'page-container bordered-container inner-blueberry text-center'}>
+        <div
+          className={`page-container bordered-container inner-blueberry text-center ${isRegistrationClosed ? styles.panel : ''}`}
+        >
           <LoginView csrfToken={csrfToken} />
         </div>
       </article>

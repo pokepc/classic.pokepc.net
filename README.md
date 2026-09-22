@@ -22,6 +22,23 @@ Or all in one command: `pnpm build && pnpm dev && pnpm open`
 
 For other scripts, please check the `package.json` files.
 
+## Closing Classic registrations
+
+Set `NEXT_PUBLIC_REGISTRATION_CLOSED=true` to block new Classic users and display the 2027 retirement notice on the
+login page only. The setting accepts only `true` or `false`, defaults to `false`, and is compiled into both server and
+browser code. **Rebuild and redeploy after changing it**, including when rolling back to `false`.
+
+Existing accounts can still sign in by email, token, or linked Patreon and can link Patreon while signed in. Unknown
+emails cannot receive sign-in mail or create accounts through previously issued tokens. No accounts or collections are
+migrated by this switch. Actual migration, merging, and the 2027 redirects are separate work.
+
+Release with the switch off first. Verify closure on staging with existing and unknown accounts, including Patreon and
+old email tokens, and confirm `https://pokepc.net/signup` renders before enabling production closure. After activation,
+verify that Classic account creations stop and existing-user authentication stays healthy. The existing Plausible
+integration records `Classic successor CTA` clicks with only a `placement` property (`login`); configure that
+custom-event goal in Plausible to review referrals. Clicks indicate interest, not completed signups. Roll back by
+rebuilding and redeploying with the switch off.
+
 ## Software Stack
 
 We use the following technologies, services and tools:

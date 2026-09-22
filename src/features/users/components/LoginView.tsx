@@ -2,6 +2,7 @@ import { useRouter } from 'next/compat/router'
 import { useState } from 'react'
 
 import { isSignInEnabled } from '@/config/featureFlags'
+import { isRegistrationClosed } from '@/config/registration'
 import { Routes } from '@/config/routes'
 import { useSession } from '@/features/users/auth/hooks/useSession'
 import EmailSigninView from '@/features/users/components/EmailSigninView'
@@ -11,6 +12,7 @@ import { SiteLink } from '@/lib/components/Links'
 import { LoadingBanner } from '@/lib/components/panels/LoadingBanner'
 import { LoadingRedirectBanner } from '@/lib/components/panels/LoadingRedirectBanner'
 import { PatreonButton } from '../components/PatreonButtons'
+import { RetirementNotice } from '@/lib/components/RetirementNotice'
 
 export function LoginView({ csrfToken }: { csrfToken: string | null }): React.JSX.Element {
   const router = useRouter()
@@ -54,17 +56,22 @@ export function LoginView({ csrfToken }: { csrfToken: string | null }): React.JS
 
   return (
     <div className="text-center">
+      <RetirementNotice blocked={router?.query.notice === 'registration-closed'} />
       <h2>
-        <i className={'icon-user'} /> Sign In
+        <i className={'icon-user'} /> {isRegistrationClosed ? 'Already use Classic?' : 'Sign In'}
       </h2>
-      <p className={'inner-container inner-blueberry text-left'}>
-        When you sign in, you'll be able to save your{' '}
-        <b>
-          <i className={'icon-pkg-box-home'} />
-          Livingdex
-        </b>{' '}
-        progress and use all other upcoming features of the website.
-      </p>
+      {isRegistrationClosed ? (
+        <p>Sign in with your existing Classic account to continue using your collection.</p>
+      ) : (
+        <p className={'inner-container inner-blueberry text-left'}>
+          When you sign in, you'll be able to save your{' '}
+          <b>
+            <i className={'icon-pkg-box-home'} />
+            Livingdex
+          </b>{' '}
+          progress and use all other upcoming features of the website.
+        </p>
+      )}
       {!tokenMode && (
         <div>
           <EmailSigninView csrfToken={csrfToken} />
