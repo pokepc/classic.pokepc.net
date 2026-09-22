@@ -58,6 +58,7 @@ RUN . ~/.bashrc && corepack prepare pnpm --activate
 FROM node_base AS app_deps
 COPY package.json /webapp/package.json
 COPY pnpm-lock.yaml /webapp/pnpm-lock.yaml
+COPY pnpm-workspace.yaml /webapp/pnpm-workspace.yaml
 COPY src/prisma/schema.prisma /webapp/src/prisma/schema.prisma
 WORKDIR /webapp
 RUN --mount=type=cache,id=pnpm_store,target=/pnpm/store NODE_ENV=development pnpm install --frozen-lockfile

@@ -1,9 +1,10 @@
 {
-  "name": "supereffective-website",
-  "version": "3.12.1",
+  "name": "classic-pokepc",
+  "version": "3.20.0",
   "private": true,
   "repository": "git@github.com:itsjavi/supereffective.git",
   "license": "MIT",
+  "homepage": "https://classic.pokepc.net",
   "author": "Javi Aguilar https://itsjavi.com",
   "scripts": {
     "build": "pnpm typecheck && pnpm build:data && next build --webpack",
