@@ -35,50 +35,48 @@ export function convertDexFromLegacyToV4(dex: LoadedDex): DeserializedLivingDexD
     format: LIVINGDEX_DOC_SPEC_VERSION_LAST,
     legacyPresetId: dex.presetId,
     legacyPresetVersion: dex.presetVersion,
-    boxes: dex.boxes.map(
-      (box, i): LivingDexDocBox => ({
-        title: box.title ?? `Box ${i + 1}`,
-        shiny: box.shiny,
-        pokemon: box.pokemon.map((pokemon): LivingDexDocPokemon | null => {
-          if (!pokemon) {
-            return null
-          }
+    boxes: dex.boxes.map((box, i): LivingDexDocBox => ({
+      title: box.title ?? `Box ${i + 1}`,
+      shiny: box.shiny,
+      pokemon: box.pokemon.map((pokemon): LivingDexDocPokemon | null => {
+        if (!pokemon) {
+          return null
+        }
 
-          if (!pokemon.pid) {
-            throw new Error(`Pokemon has no id`)
-          }
+        if (!pokemon.pid) {
+          throw new Error(`Pokemon has no id`)
+        }
 
-          const emblemMarks = []
+        const emblemMarks = []
 
-          if (pokemon.alpha) {
-            emblemMarks.push('alpha')
-          }
+        if (pokemon.alpha) {
+          emblemMarks.push('alpha')
+        }
 
-          if (pokemon.gmax) {
-            emblemMarks.push('gmax')
-          }
+        if (pokemon.gmax) {
+          emblemMarks.push('gmax')
+        }
 
-          return {
-            id: pokemon.pid,
-            captured: pokemon.caught,
-            shiny: pokemon.shiny,
-            originMark: undefined,
-            nature: undefined,
-            pokerus: undefined,
-            level: undefined,
-            dynamaxLevel: undefined,
-            teraType: undefined,
-            ball: undefined,
-            item: undefined,
-            language: undefined,
-            evs: [],
-            ivs: [],
-            moves: [],
-            emblemMarks: emblemMarks,
-          }
-        }),
+        return {
+          id: pokemon.pid,
+          captured: pokemon.caught,
+          shiny: pokemon.shiny,
+          originMark: undefined,
+          nature: undefined,
+          pokerus: undefined,
+          level: undefined,
+          dynamaxLevel: undefined,
+          teraType: undefined,
+          ball: undefined,
+          item: undefined,
+          language: undefined,
+          evs: [],
+          ivs: [],
+          moves: [],
+          emblemMarks: emblemMarks,
+        }
       }),
-    ),
+    })),
   }
 }
 
@@ -97,28 +95,26 @@ export function convertDexFromV4ToLegacy(dexRecord: LivingDex, dex: Deserialized
     preset: [getGameSetByGameId(dex.gameId).id, dex.gameId, dex.legacyPresetId, dex.legacyPresetVersion],
     caught: [0, 0], //  [caught, total]
     caughtShiny: [0, 0],
-    boxes: dex.boxes.map(
-      (box): DexBox => ({
-        title: box.title,
-        shiny: box.shiny,
-        pokemon: box.pokemon.map((pokemon): NullableDexPokemon => {
-          if (!pokemon) {
-            return null
-          }
+    boxes: dex.boxes.map((box): DexBox => ({
+      title: box.title,
+      shiny: box.shiny,
+      pokemon: box.pokemon.map((pokemon): NullableDexPokemon => {
+        if (!pokemon) {
+          return null
+        }
 
-          const pkmEntry = getPokemonEntry(migratePokemonId(pokemon.id))
+        const pkmEntry = getPokemonEntry(migratePokemonId(pokemon.id))
 
-          return {
-            pid: pkmEntry.id,
-            nid: pkmEntry.nid,
-            caught: pokemon.captured,
-            shiny: pokemon.shiny,
-            alpha: pokemon.emblemMarks.includes('alpha'),
-            gmax: pokemon.emblemMarks.includes('gmax'),
-          }
-        }),
+        return {
+          pid: pkmEntry.id,
+          nid: pkmEntry.nid,
+          caught: pokemon.captured,
+          shiny: pokemon.shiny,
+          alpha: pokemon.emblemMarks.includes('alpha'),
+          gmax: pokemon.emblemMarks.includes('gmax'),
+        }
       }),
-    ),
+    })),
   }
 }
 
@@ -141,28 +137,26 @@ export function convertDexFromV4ToLegacyStd(
     preset: [getGameSetByGameId(dex.gameId).id, dex.gameId, dex.legacyPresetId, dex.legacyPresetVersion],
     caught: [0, 0], //  [caught, total]
     caughtShiny: [0, 0],
-    boxes: dex.boxes.map(
-      (box): DexBox => ({
-        title: box.title,
-        shiny: box.shiny,
-        pokemon: box.pokemon.map((pokemon): NullableDexPokemon => {
-          if (!pokemon) {
-            return null
-          }
+    boxes: dex.boxes.map((box): DexBox => ({
+      title: box.title,
+      shiny: box.shiny,
+      pokemon: box.pokemon.map((pokemon): NullableDexPokemon => {
+        if (!pokemon) {
+          return null
+        }
 
-          const pkmEntry = getPokemonEntry(pokemon.id)
+        const pkmEntry = getPokemonEntry(pokemon.id)
 
-          return {
-            pid: pokemon.id,
-            nid: pkmEntry.nid,
-            caught: pokemon.captured,
-            shiny: pokemon.shiny,
-            alpha: pokemon.emblemMarks.includes('alpha'),
-            gmax: pokemon.emblemMarks.includes('gmax'),
-          }
-        }),
+        return {
+          pid: pokemon.id,
+          nid: pkmEntry.nid,
+          caught: pokemon.captured,
+          shiny: pokemon.shiny,
+          alpha: pokemon.emblemMarks.includes('alpha'),
+          gmax: pokemon.emblemMarks.includes('gmax'),
+        }
       }),
-    ),
+    })),
   }
 }
 

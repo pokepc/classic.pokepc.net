@@ -1,13 +1,5 @@
 export type LegacyGameSetSymbol =
-  | 'caught'
-  | 'shiny'
-  | 'pokerus'
-  | 'pokerus_cured'
-  | 'gmax'
-  | 'alpha'
-  | 'shadow'
-  | 'purified'
-  | 'apex'
+  'caught' | 'shiny' | 'pokerus' | 'pokerus_cured' | 'gmax' | 'alpha' | 'shadow' | 'purified' | 'apex'
 
 export type LegacyGameSet = {
   id: string
