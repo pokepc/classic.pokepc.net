@@ -26,8 +26,8 @@ For other scripts, please check the `package.json` files.
 
 We use the following technologies, services and tools:
 
-- We use Node v20 LTS
-- pnpm v8 for package management
+- We use Node v24 LTS
+- pnpm v12 for package management
 - Turborepo (turbo) to accelerate running scripts
 - NextJS 14 + React 18 for the website
 - CSS Modules for styling without styling libraries

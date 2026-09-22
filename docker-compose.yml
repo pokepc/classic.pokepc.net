@@ -4,6 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile
       target: app_serve
+    profiles: [ build ]
     ports:
       - 4000:4000
     env_file:
@@ -23,7 +24,7 @@ services:
       timeout: 5s
       retries: 10
   postgres:
-    image: postgres:16-alpine
+    image: postgres:17-alpine
     ports:
       - 45432:5432 # postgresql://myuser:mysecret@127.0.0.1:5432/supereffectivedb?search_path=public
     volumes:

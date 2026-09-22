@@ -60,13 +60,12 @@
     "glob": "^13.0.6",
     "jest": "^30.5.2",
     "prettier": "^3.9.8",
-    "pwa-asset-generator": "^8.1.7",
     "typescript": "^6.0.3"
   },
   "peerDependencies": {
     "nodemailer": "^6.9.12"
   },
-  "packageManager": "pnpm@9.4.0",
+  "packageManager": "pnpm@12.5.1",
   "prisma": {
     "schema": "src/prisma/schema.prisma"
   }

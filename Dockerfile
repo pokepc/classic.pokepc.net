@@ -24,7 +24,7 @@ ENV PATH="${BUN_INSTALL}/bin:${PATH}"
 RUN apt-get update && apt-get install -y --no-install-recommends \
   ca-certificates openssh-client curl wget git unzip \
   && rm -rf /var/lib/apt/lists/*
-RUN curl -fsSL https://bun.com/install | bash -s "bun-v1.3.0"
+RUN curl -fsSL https://bun.com/install | bash -s "bun-v1.4.2"
 RUN corepack enable
 RUN corepack prepare pnpm --activate
 RUN echo "HOME: $HOME"
@@ -45,8 +45,8 @@ COPY server/nginx.conf /etc/nginx/nginx.conf
 RUN apt-get update && apt-get install -y --no-install-recommends \
   ca-certificates openssh-client curl wget git unzip \
   && rm -rf /var/lib/apt/lists/*
-RUN curl -fsSL https://bun.com/install | bash -s "bun-v1.3.0"
-RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+RUN curl -fsSL https://bun.com/install | bash -s "bun-v1.4.2"
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.8/install.sh | bash
 RUN . ~/.bashrc && nvm install 24
 RUN . ~/.bashrc && nvm use 24
 RUN . ~/.bashrc && corepack enable
